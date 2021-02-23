@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "ChatHero",
+  "description": "Chat with your friends while playing online board games!",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_popup": "popup.html",
+   "default_icon": "logo.png",
+   "default_title": "ChatHero" 
+  },
+  
+  "permissions": [
+   "activeTab"
+   ]
+}

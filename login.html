@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Info</title>
+</head>
+<body>
+
+<h1 style="text-align:center;" >Enter your Name and Select your Room</h1>
+<div class="containerFrm">
+    <form name="myForm" action="http://localhost/rm1.php" onsubmit="return validateForm()" method="GET">
+        <div class="row">
+        <div class="col-25">
+            <label for="fname">Your Name:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="fname" name="fname" placeholder="Name" required>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="room">Room #:</label>
+        </div>
+        <div class="col-75">
+
+        <select id="room" name="room">
+            <option value="1">Room 1</option>
+            <option value="2">Room 2</option>
+            <option value="3">Room 3</option>
+            <option value="4">Room 4</option>
+        </select>
+        </div>
+        </div>
+
+        <div class="row">
+        <input type="submit" value="Enter Room">
+        </div>
+    </form>
+</div>
+</body>
+</html>
